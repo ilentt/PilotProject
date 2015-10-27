@@ -1,5 +1,8 @@
 @CHARSET "UTF-8";
 
+.page-header{
+	width: 780px;
+}
 .text-muted {
 	background: #ffffff url("../image/logo.png") no-repeat left center;
 	line-height: 60px;
@@ -15,11 +18,31 @@
 	color: #666;
 }
 
+.form-group .btn {
+	width: 182px;
+}
 .dropdown .btn-default {
 	width: 150px;
 	text-align: left;
 }
+.form-horizontal {
+	width: 100%;
+}
+.form-group {
+    margin-bottom: 38px;
+}
 
+.form-group .btn, .form-group .custom-width {
+	width: 200px;
+}
+
+.input-group .form-control {
+	width: 161px;	
+}
+.form-control {
+	width: 630px;
+	height: 30px;
+}
 .form-group span {
 	color: #FF3300;
 }
@@ -39,7 +62,53 @@
 
 .right-line .page-header {
 	border-bottom: none;
+	height: 30px;
 }
+
 .right-line .page-header small {
 	color: #2F85FA;
+}
+
+.navbar {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	line-height: 60px;
+}
+
+.navbar-inverse {
+	background-color: #FFF;
+	border-color: #FFF;
+}
+
+.navbar-inverse .navbar-nav li a, 
+.navbar-inverse .navbar-nav li a:hover {
+	font: normal 600 14px Segoe UI, Helvetica, Arial, sans-serif;
+	color: #333;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+	color: #2F85FA;
+}
+
+.nav-pills a {
+	font: normal 400 14px Segoe UI, Helvetica, Arial, sans-serif;
+	color: #666;
+	line-height: 10px;
+}
+
+.nav-pills a.bold {
+	font: normal 600 14px Segoe UI, Helvetica, Arial, sans-serif;
+	color: #333;
+	line-height: 10px;
+}
+
+.nav-pills a.hightlight {
+	font: normal 600 18px Segoe UI, Helvetica, Arial, sans-serif;
+	color: #2F85FA;
+	line-height: 10px;
+}
+
+.language-bar li a {
+	padding-left: 2px;
+	padding-right: 2px;
 }
