@@ -1,0 +1,2 @@
+http://www.vogella.com/tutorials/FreeMarker/article.html#freemarkertest
+http://eonasdan.github.io/bootstrap-datetimepicker/Installing/#manual
