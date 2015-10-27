@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bootstrap 3, from LayoutIt!</title>
+
+<meta name="description"
+	content="Source code generated using layoutit.com">
+<meta name="author" content="LayoutIt!">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/elca.css" rel="stylesheet">
+
+<script type='text/javascript' src='http://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js'></script>
+<script type='text/javascript' src='/js/koscript.js'></script>
+</head>
+<body>
+
+	<div class="container">
+		<div class="row bottom-line">
+			<div class="col-md-8">
+				<!-- <img alt="Logo" src="image/logo.png"> -->
+				<h3 class="text-muted">
+					<span>Project Information Management</span>
+				</h3>
+			</div>
+			<div class="col-md-4">
+				<nav class="navbar navbar-inverse">
+					<div class="container-fluid">
+						<div>
+							<ul class="nav navbar-nav">
+								<li><a href="#">EN</a></li>
+								<li><a href="#">FR</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li><a href="#"><span class="glyphicon glyphicon-user"></span>
+										Help</a></li>
+								<li><a href="#"><span
+										class="glyphicon glyphicon-log-in"></span> Log out</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2 right-line">
+				<div class="page-header">
+					<h1>
+						<small>Project List</small>
+					</h1>
+				</div>
+				<ul class="nav nav-pills nav-stacked">
+					<li><a href="#">New</a></li>
+					<li><a href="#">Project</a></li>
+					<li><a href="#">Customer</a></li>
+					<li><a href="#">Supplier</a></li>
+				</ul>
+			</div>
+			<div class="col-md-10">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="page-header">
+							<h1>
+								<small>New Project</small>
+							</h1>
+						</div>
+						<form class="form-horizontal" role="form">
+							<div class="form-group">
+
+								<label for="inputProjNumber" class="col-sm-3 control-label">
+									<small>Project Number</small> <span>*</span>
+								</label>
+								<div class="col-sm-3">
+									<input type="text" class="form-control" id="inputProjNumber" />
+								</div>
+							</div>
+							<div class="form-group">
+
+								<label for="inputPrjName" class="col-sm-3 control-label">
+									<small>Project Name</small> <span>*</span>
+								</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputPrjName" />
+								</div>
+							</div>
+
+							<div class="form-group">
+
+								<label for="inputCustomer" class="col-sm-3 control-label">
+									<small>Customer</small> <span>*</span>
+								</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputCustomer" />
+								</div>
+							</div>
+
+							<div class="form-group">
+
+								<label for="inputGroup" class="col-sm-3 control-label">
+									<small>Group</small> <span>*</span>
+								</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputGroup" />
+								</div>
+							</div>
+
+							<div class="form-group">
+
+								<label for="inputMember" class="col-sm-3 control-label">
+									<small>Member</small> <span>*</span>
+								</label>
+								<div class="col-sm-9">
+									<input type="text" class="form-control" id="inputMember" />
+								</div>
+							</div>
+
+							<div class="form-group">
+								<label for="inputStatus" class="col-sm-3 control-label">
+									<small>Status</small> <span>*</span>
+								</label>
+
+								<div class="col-sm-9">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button"
+											id="inputStatus" data-toggle="dropdown">
+											New <span class="caret"></span>
+										</button>
+										<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+											<li role="presentation"><a role="menuitem" tabindex="-1"
+												href="#">Planned</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1"
+												href="#">In progress</a></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1"
+												href="#">Finished</a></li>
+											<li role="presentation" class="divider"></li>
+											<li role="presentation"><a role="menuitem" tabindex="-1"
+												href="#">About Us</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-group">
+
+								<label for="startDatePicker" class="col-sm-3 control-label">
+									<small>Start Date</small> <span>*</span>
+								</label>
+								<div class="col-sm-3 date">
+									<div class='input-group date' id='startDatePicker'>
+										<input type='text' class="form-control" /> <span
+											class="input-group-addon"> <span
+											class="glyphicon glyphicon-calendar"></span>
+										</span>
+									</div>
+								</div>
+								<script type="text/javascript">
+									$(function() {
+										$('#startDatePicker').datetimepicker();
+									});
+								</script>
+
+								<label for="endDatePicker" class="col-sm-3 control-label">
+									<small>End Date</small>
+								</label>
+
+								<div class="col-sm-3 date">
+									<div class='input-group date' id='endDatePicker'>
+										<input type='text' class="form-control" /> <span
+											class="input-group-addon"> <span
+											class="glyphicon glyphicon-calendar"></span>
+										</span>
+									</div>
+								</div>
+								<script type="text/javascript">
+									$(function() {
+										$('#startDatePicker').datetimepicker();
+									});
+								</script>
+
+							</div>
+
+							<div class="page-header">
+								<!-- Footer line -->
+							</div>
+							<div class="form-group">
+								<div class="col-sm-offset-6 col-sm-10">
+
+									<button type="button" class="btn btn-default btn-md">Cancel
+									</button>
+									<button type="button" class="btn btn-primary btn-md">Create
+										Project</button>
+								</div>
+							</div>
+
+						</form>
+					</div>
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12"></div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>

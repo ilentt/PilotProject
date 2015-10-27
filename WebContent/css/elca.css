@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+.text-muted {
+	background: #ffffff url("../image/logo.png") no-repeat left center;
+	line-height: 60px;
+}
+
+.text-muted span {
+	font: normal bolder 20px/30px Segoe UI, Helvetica, Arial, sans-serif;
+	margin-left: 90px;
+}
+
+.form-group small {
+	font: normal 600 14px Segoe UI, Helvetica, Arial, sans-serif;
+	color: #666;
+}
+
+.dropdown .btn-default {
+	width: 150px;
+	text-align: left;
+}
+
+.form-group span {
+	color: #FF3300;
+}
+
+.bottom-line {
+	border-bottom: 1px solid #EEE;
+}
+
+.right-line {
+	border-right: 1px solid #EEE;
+	height: 600px;
+}
+
+.page-header small {
+	font: normal 600 18px/30px Segoe UI, Helvetica, Arial, sans-serif;
+}
+
+.right-line .page-header {
+	border-bottom: none;
+}
+.right-line .page-header small {
+	color: #2F85FA;
+}
