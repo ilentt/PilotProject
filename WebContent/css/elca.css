@@ -1,8 +1,14 @@
 @CHARSET "UTF-8";
 
-.page-header{
+.page-header {
 	width: 780px;
 }
+hr {
+    margin: 40px 0 20px;
+    border-bottom: 0.01em solid #eee;
+    width: 780px;
+}
+
 .text-muted {
 	background: #ffffff url("../image/logo.png") no-repeat left center;
 	line-height: 60px;
@@ -13,13 +19,37 @@
 	margin-left: 90px;
 }
 
-.form-group small {
+.form-group .small {
 	font: normal 600 14px Segoe UI, Helvetica, Arial, sans-serif;
 	color: #666;
 }
 
-.form-group .btn {
+.form-group .button-group .btn {
 	width: 182px;
+}
+.form-group .button-group .left {
+	margin-left: 111px;
+}
+
+.form-group .button-group .btn-default,
+.form-group .button-group .btn-default:hover {
+	background: #ffffff url("../image/cancel_icon.png") no-repeat 40px 6px;
+	color: #333;
+	border-color: #ccc;
+}
+.form-group .button-group .btn-default:hover {
+	background: #e6e6e6 url("../image/cancel_icon.png") no-repeat 40px 6px;
+	border-color: #adadad;
+}
+.form-group .button-group .btn-primary,
+.form-group .button-group .btn-primary:hover {
+	background: #337ab7 url("../image/submit_icon.png") no-repeat 15px 6px;
+	color: #fff;
+    border-color: #2e6da4;
+}
+.form-group .button-group .btn-primary:hover {
+	background: #286090 url("../image/submit_icon.png") no-repeat 15px 6px;
+	border-color: #204d74;
 }
 .dropdown .btn-default {
 	width: 150px;
@@ -34,6 +64,7 @@
 
 .form-group .btn, .form-group .custom-width {
 	width: 200px;
+	height: 30px;
 }
 
 .input-group .form-control {
@@ -43,10 +74,13 @@
 	width: 630px;
 	height: 30px;
 }
-.form-group span {
+.form-group .control-label span {
 	color: #FF3300;
 }
 
+.form-group .left {
+	margin-left: 55px;
+}
 .bottom-line {
 	border-bottom: 1px solid #EEE;
 }
